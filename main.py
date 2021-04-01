@@ -46,14 +46,14 @@ if __name__ == '__main__':
         state_space = StateSpace(list_of_tuples[i - 1], goal_tuple, i, dir_path + "\\")
 
         # Depth First Search
-        # state_space.dfs(10)
+        state_space.dfs(10)
 
         # Breadth First Search
-        # state_space.bfs()
+        state_space.bfs()
 
         # Heuristic A
-        # heuristic_a = HeuristicA(list_of_tuples[i-1], goal_tuple, i, dir_path + "\\")
-        # heuristic_a.start()
+        heuristic_a = HeuristicA(list_of_tuples[i-1], goal_tuple, i, dir_path + "\\")
+        heuristic_a.start()
 
         # heuristic B
         heuristic_b = HeuristicB(list_of_tuples[i - 1], goal_tuple, i, dir_path + "\\")
